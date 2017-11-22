@@ -1,0 +1,121 @@
+<html><head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="http://entec.ifpr.edu.br/wp-content/uploads/2016/09/cropped-ifpr.png">
+    </head>
+    <body>
+
+        <style>
+          
+            body {
+                /* Define um fundo, pode ser uma imagem ou cor */
+                background: #dddddd;
+                /* Tipo da fonte */
+                font-family: Calibri;
+                /* Cor da fonte */
+                color: #333333;
+            }
+            .titulo{
+                /* Tamanho da font */
+                font-size: 12pt;
+                /* Negrito ou n�o */
+                font-weight: bold;
+            }
+            .botao{
+                background: #2494FF;
+                color: #FFFFFF;
+                padding: 10px 20px;
+                border: none;
+            }
+            .campo{
+                border-left-color: #AAAAAA;
+                border-width: 0px 0px 0px 5px;              
+                background: #FFFFFF;
+                padding: 10px 3px;
+            }
+            h2{
+                border-left-color: #2494FF;
+                border-left-width: 5px;
+                border-left-style: solid;
+                padding-left: 5px;
+                
+                border-bottom-color: #2494FF;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+            }
+            #conteudo{
+                background: #EEEEEE;
+                border-color: #AAAAAA;
+                border-style: solid;
+                border-width: 1px;
+                
+                width: 500px;
+                margin: 10px auto;
+                padding: 15px;
+            }
+            
+            .center{
+                text-align: center;
+            }
+        </style>
+
+        <div id="conteudo">
+
+            <h2>Login</h2>
+
+            <form action="" method="GET">
+
+                <label class="titulo">Login:</label><br>
+                <input class="campo" name="login" placeholder="seu@email.com" type="email">
+                <br><br>
+
+                <label class="titulo">Senha:</label><br>
+                <input class="campo" name="senha" placeholder="Informe a senha" type="password">
+                <br><br>
+
+                <label class="titulo">Sexo:</label><br>
+
+                <!--
+                        O input do tipo "radio" serve para que o usu�rio selecione
+                        uma �nica op��o. As op��es devem ter o mesmo name e o que
+                        diferencia elas � a propriedade value.
+                -->
+
+                <input name="sexo" value="M" type="radio">
+                <label>Masculino</label><br>
+
+                <input name="sexo" value="F" type="radio">
+                <label>Feminino</label><br><br>
+
+                <label class="titulo">Plataforma preferida de email:</label><br>
+
+                <!--
+                        o checkbox � bem parecido com o radio, tem que ter o mesmo name
+                        acrescido do sinal [] (isso ser� entendido mais adiante)
+                -->
+
+                <input name="preferencia[]" value="hotmail" type="checkbox">
+                <label>Hotmail.com</label><br>
+
+                <input name="preferencia[]" value="gmail" type="checkbox">
+                <label>Gmail.com</label><br>
+
+                <input name="preferencia[]" value="bol" type="checkbox">
+                <label>Bol.com.br</label><br>
+
+                <label class="titulo">Cor:</label><br>
+                <input name="cor" type="color"><br>
+
+                <br>
+                <div class="center">
+                    <input value="Entrar" class="botao" type="submit">
+                </div>
+
+            </form>
+
+        </div>
+
+    
+
+</body></html>
